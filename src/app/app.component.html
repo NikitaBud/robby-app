@@ -1,3 +1,26 @@
 <div class="container">
   <h1>Hello, I am Robby!</h1>
+  <form class="card-form" [formGroup]="form" (ngSubmit)="submit()">
+    <mat-form-field class="form-control" appearance="outline">
+      <mat-label>Map</mat-label>
+      <input matInput type="text" placeholder="Map" formControlName="map">
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="form-control">
+      <mat-label>Energy</mat-label>
+      <input matInput type="text" placeholder="Energy" formControlName="energy">
+      <div class="validation"></div>
+    </mat-form-field>
+
+    <button mat-raised-button class="btn" type="submit" [disabled]="form.invalid">Send</button>
+  </form>
+  <div class="card">
+    <div class="card__item">
+      <img mat-card-image class="card__img" src="./../assets/robot.png" alt="robot">
+    </div>
+    <div class="card__item">
+      <p> - My navigation is out of order and I need help.</p>
+      <p> - ... {{this.result}}</p>
+    </div>
+  </div>
 </div>
