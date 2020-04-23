@@ -4,16 +4,26 @@
     padding-top: 3rem;
 }
 
+.card-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
 .form-control {
   margin-right: 15px;
 }
 
 .card {
   display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-top: 25px;
   justify-content: space-between;
+  align-items: center;
   max-width: 500px;
-  border: 1px solid rgba(224, 224, 224, 1);
-  border-radius: 5px;
+  //border: 1px solid rgba(224, 224, 224, 1);
+  //border-radius: 5px;
 }
 
 .card__item {
