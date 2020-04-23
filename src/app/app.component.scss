@@ -3,3 +3,25 @@
     margin: 0 auto;
     padding-top: 3rem;
 }
+
+.form-control {
+  margin-right: 15px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  max-width: 500px;
+  border: 1px solid rgba(224, 224, 224, 1);
+  border-radius: 5px;
+}
+
+.card__item {
+  padding: 15px;
+}
+
+.card__img {
+  width: 100px;
+}
+
+
